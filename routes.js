@@ -6,8 +6,6 @@ const router = express.Router();
 
 const key = process.env.ACCESS_KEY;
 
-console.log(key);
-
 router.get('/unsplash', async (req, res, next) => {
   try {
     const queryParam = req.query.query ? `&query=${req.query.query}` : '';
