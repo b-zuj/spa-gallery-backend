@@ -11,7 +11,7 @@ app.use((req, res, next) => {
   console.log(req.headers.host);
 
   if (req.headers.host !== 'https://salt-spa-project-bucket.s3.eu-north-1.amazonaws.com') {
-    return res.send();
+    return res.status(404).send();
   }
 
   if (req.method === 'OPTIONS') return res.send();
