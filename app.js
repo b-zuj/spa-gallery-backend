@@ -1,6 +1,6 @@
 const express = require('express');
 const routes = require('./routes');
-const cors = require('cors')
+// const cors = require('cors')
 
 const app = express();
 
@@ -8,10 +8,10 @@ app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', 'https://salt-spa-project-bucket.s3.eu-north-1.amazonaws.com'); // http://localhost:8080, https://salt-spa-project-bucket.s3.eu-north-1.amazonaws.com/index.html
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
-  console.log(req.headers.host)
+  console.log(req.headers.host);
 
   if (req.headers.host !== 'https://salt-spa-project-bucket.s3.eu-north-1.amazonaws.com') {
-    return res.send()
+    return res.send();
   }
 
   if (req.method === 'OPTIONS') return res.send();
