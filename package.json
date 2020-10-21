@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --config ./jest.config.json",
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "lint": "eslint '**/*.js'"
   },
   "keywords": [],
