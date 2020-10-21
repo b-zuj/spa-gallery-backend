@@ -1,9 +1,12 @@
 const express = require('express');
 const axios = require('axios');
+require('dotenv').config();
 
 const router = express.Router();
 
-const key = 'TduXFqg5AQzljFLF3zp-MiNvAzj4Bp9eaY_lQUUC0xY';
+const key = process.env.ACCESS_KEY;
+
+console.log(key);
 
 router.get('/unsplash', async (req, res, next) => {
   try {
