@@ -15,11 +15,11 @@ describe('API', () => {
     server.close(done);
   });
 
-  test('expect 200', async () => {
-    await request(server)
-      .get('/api/unsplash?query=cat')
-      .expect(200);
-  });
+  // test('expect 200', async () => {
+  //   await request(server)
+  //     .get('/api/unsplash?query=cat')
+  //     .expect(200);
+  // });
 
   test('expect 404', async () => {
     await request(server)
