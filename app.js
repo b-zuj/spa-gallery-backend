@@ -5,7 +5,7 @@ const routes = require('./routes');
 const app = express();
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://salt-spa-project-bucket.s3.eu-north-1.amazonaws.com'); // http://localhost:8080, https://salt-spa-project-bucket.s3.eu-north-1.amazonaws.com/index.html
+  res.header('Access-Control-Allow-Origin', '*')
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 
   if (req.method === 'OPTIONS') return res.send();
