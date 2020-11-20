@@ -1,6 +1,5 @@
 const express = require('express');
 const routes = require('./routes');
-// const cors = require('cors')
 
 const app = express();
 
@@ -11,13 +10,6 @@ app.use((req, res, next) => {
   if (req.method === 'OPTIONS') return res.send();
   return next();
 });
-
-// const corsOptions = {
-//   origin: 'https://salt-spa-project-bucket.s3.eu-north-1.amazonaws.com',
-//   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-// }
-
-// app.use(cors(corsOptions))
 
 app.use('/api', routes);
 
