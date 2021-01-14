@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)](https://travis-ci.com/travis-ci/travis-web)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  
-This is project prepared as a part of course at School of Applied Technology </salt> and it was created in colaboration with [MaciejGL](https://github.com/MaciejGL) and [mountwebs](https://github.com/mountwebs). It contains an API for simple [SPA gallery](https://github.com/b-zuj/spa-gallery-frontend) that has the function of searching images by keyword. The project is deployed on Heroku - https://salt-spa-gallery.herokuapp.com/.
+This is project prepared as a part of course at School of Applied Technology </salt> and it was created in colaboration with [MaciejGL](https://github.com/MaciejGL) and [mountwebs](https://github.com/mountwebs). It contains an API for simple [SPA gallery](https://github.com/b-zuj/spa-gallery-frontend) that has the function of searching images by keyword. The project is deployed on Heroku - https://spa-gallery-backend.herokuapp.com/.
 
 **NOTE that there is a 50 requests per hour limit on unsplash API thus also on this API**
 
